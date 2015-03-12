@@ -1082,7 +1082,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 }
 
 static const int64 nTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-static const int64 nTargetSpacing = 10 * 60;
+static const int64 nTargetSpacing = 3 * 60;
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -3241,6 +3241,14 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             pfrom->fDisconnect = true;
             return false;
         }
+
+	if (pfrom->nVersion < 70002)
+	{
+	//disconnect from older peers -> for the fork.
+	printf("partner %s using obsolete version %i; disconnecting\n", pfrom->addr.ToString().c_str(), pfrom->nVersion);
+	pfrom->fDisconnect = true;
+        return false;
+	}
 
         if (pfrom->nVersion == 10300)
             pfrom->nVersion = 300;
