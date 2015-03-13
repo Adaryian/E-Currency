@@ -3242,7 +3242,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             return false;
         }
 
-	if ((pfrom->nVersion < 70002) && (nHeight > 32256))
+	if (pfrom->nVersion < 70002)
 	{
 	//disconnect from older peers -> for the fork.
 	printf("partner %s using obsolete version %i; disconnecting\n", pfrom->addr.ToString().c_str(), pfrom->nVersion);
