@@ -1,11 +1,8 @@
-Ecurrency integration/staging tree
+﻿Ecurrency integration/staging tree
 ================================
-<<<<<<< HEAD
-Copyright (c) 2009-2015 Bitcoin Developers
-=======
 
-Copyright (c) 2009-2013 Bitcoin Developers
->>>>>>> origin/E-CurrencyTEST
+Copyright (c) 2009-2015 Bitcoin Developers
+
 
 What is Ecurrency?
 ----------------
@@ -16,12 +13,10 @@ with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Ecurrency is also the name of the open source
 software which enables the use of this currency.
 
-<<<<<<< HEAD
-=======
 For more information, as well as an immediately useable, binary version of
 the Ecurrency client software, see http://www.eCurrency.io
 
->>>>>>> origin/E-CurrencyTEST
+
 License
 -------
 
