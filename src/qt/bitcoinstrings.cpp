@@ -142,7 +142,7 @@ QT_TRANSLATE_NOOP("ecurrency-core", "Invalid amount for -mintxfee=<amount>: '%s'
 QT_TRANSLATE_NOOP("ecurrency-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
 QT_TRANSLATE_NOOP("ecurrency-core", "Invalid amount"),
 QT_TRANSLATE_NOOP("ecurrency-core", "List commands"),
-QT_TRANSLATE_NOOP("ecurrency-core", "Listen for connections on <port> (default: 8080 or testnet: 18080)"),
+QT_TRANSLATE_NOOP("ecurrency-core", "Listen for connections on <port> (default: 8079 or testnet: 18080)"),
 QT_TRANSLATE_NOOP("ecurrency-core", "Loading addresses..."),
 QT_TRANSLATE_NOOP("ecurrency-core", "Loading block index..."),
 QT_TRANSLATE_NOOP("ecurrency-core", "Loading wallet..."),
