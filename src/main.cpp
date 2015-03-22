@@ -3242,6 +3242,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             return false;
         }
 
+<<<<<<< HEAD
 	if (((pfrom->nVersion < 70002) && ((pindexBest->nHeight) > 32256)))
 	{
 	//disconnect from older peers -> for the fork.
@@ -3249,6 +3250,10 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 	pfrom->fDisconnect = true;
         return false;
 	}
+=======
+	if (((pfrom->nVersion < 70002)
+	
+>>>>>>> parent of 1ca456f... Revert "Client Changes"
 
         if (pfrom->nVersion == 10300)
             pfrom->nVersion = 300;
