@@ -3214,11 +3214,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         printf("dropmessagestest DROPPING RECV MESSAGE\n");
         return true;
     }
-
-
-
-
-
     if (strCommand == "version")
     {
         // Each connection can only send one version message
@@ -3248,7 +3243,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 	pfrom->fDisconnect = true;
         return false;
 	}
-=======
 	if (((pfrom->nVersion < 70002)
         if (pfrom->nVersion == 10300)
             pfrom->nVersion = 300;
